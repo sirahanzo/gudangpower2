@@ -169,7 +169,15 @@ class Dashboard extends CI_Controller {
             $recA3 = '0';
         }
 
-        $data['rect_current'] = ($recA1 + $recA2 + $recA3);
+
+
+        $data['rect_current'] = ($recA1 + $recA2 + $recA3);// three become one
+
+        // for new version
+        $data ['rectA1'] = $recA1;
+        $data ['rectA2'] = $recA2;
+        $data ['rectA3'] = $recA3;
+
         # End.
 
 
