@@ -1,0 +1,36 @@
+todo:
+tambah address database retifier module
+baudrate
+server snmp:
+sn
+
+##DONE
+================================================================================
+
+
+
+
+todo:
+add relay mapping :
+ 00H PRIVATE DEFINE
+ 01H AC LOSS
+ 02H AC VOLT HIGH
+ 03H DC VOLT HIGH
+ 04H RECT MODULE
+ 05H LVD
+ 06H LVD1
+ 07H LOAD FUSE
+ 08H BATT FUSE
+ 09H ABT TEMP HIGH
+ 0AH DOOR OPEN
+ 0BH SMOG
+ 0CH WATERLOGGING
+ 0DH SYSTEM VOLT ALARM
+
+##DONE
+================================================================================
+
+
+
+
+

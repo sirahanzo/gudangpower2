@@ -1,0 +1,45 @@
+
+NOTED:
+* parameter_monitoring  101~106 insert data to table monitoring_rectifier
+* parameter_alarm 505~515 insert data to table monitoring_rectifier
+* parameter_id.paramter_monitoring '201','102','203','202','204', only for datalog.xls
+* datalog parameter only ['201','202','203','204',] from monitoring to log_monitoring
+* datalog parameter only ['102'] from monitoring_rectifier to log_monitoring_rectifier
+* parameter_id.parameter_alarm '505','506','507','508','509','510','511','512','513','514','515', insert into monitoring_rectifier
+*
+
+
+
+
+todo:
+1.(done) create event for datalog :
+  (done)  - datalog from monitoring ['201','202','203','204'] => create event log_monitoring insert into log_monitoring
+  (done)  - datalog from monitoring_rectifier ['102'] => create event log_monitoring_rectifier insert into log_monitoring_rectifier
+
+
+
+
+2. create trigers for eventlog :
+    (done)- in table monitoring_rectifier ['505','506','507','508','509','510','511','512','513','514','515',] insert into log_event_rectifier
+    (done)- in table monitoring_alarm ['01','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32',] insert into log_event
+
+3 create function update datalog+eventlog max number row for excel files & function_model (default : 3000) from table parameter_setting ['480','482]
+4 create function update datalog interval from table parameter_setting ['481']
+
+5 update parameter_setting on
+
+6.(done) make all alarm option (enable , disable, major, minor):
+    - enable will show alarm
+    - disable will hide alarm
+    - major alarm simbol red (danger)
+    - minor alarm simbol yellow (warning)
+    - no enable/disable on rectifier alarm
+
+7. remote shutdown on setting
+8. change ip address on raspberry
+9. delete datalog and eventlog
+
+
+
+
+
